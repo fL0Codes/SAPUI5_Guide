@@ -8,5 +8,3 @@ The guide is structured as followed:
  - SAPUI5 basics
  - SAPUI5 advanced concepts 
  - SAPUI5 Best Practices
-
-Detailed steps description for the session: [Mini CodeJam](/exercises/basic-codeJam)
