@@ -1,11 +1,18 @@
-# SAP Cloud Platform & SAPUI5 mindsquare Guide
+<p align="center">
+  <img src="./img/ms_logo.png" alt="mindsquare Logo"/>
+</p>
 
-## Getting started with the basics of SAP Cloud Platform and best practices of SAPUI5 programming
+# SAP Cloud Platform & SAPUI5 mindsquare guide
+The mindsquare way to SAP Cloud Platform & SAPUI5. Always refer to this guide in case of questions regarding both topics.
 
+
+## Start here to find your topic of interest
 The guide is structured as followed:
- - [SAP Cloud Platform Setup](/sap_cloud_platform_setup/cloud_connector)
- - SAP Cloud Platform Services
- - [SAP Cloud Platform troubleshooting](/sap_cloud_platform_troubleshooting)
- - SAPUI5 basics
- - SAPUI5 advanced concepts 
- - SAPUI5 Best Practices
+
+- [SAPUI5 Best Practices](/1_sapui5_best_practices/README.md)
+- [SAP Cloud Platform Setup](/2_sap_cloud_platform_setup/README.md)
+- [SAP Cloud Platform Services](/3_sap_cloud_platform_services/README.md)
+- [SAP Cloud Platform Fehlerbehandlung](/4_sap_cloud_platform_troubleshooting/README.md)
+- [SAPUI5 Basics](/5_sapui5_basics/README.md)
+- [SAPUI5 erweiterte Konzepte](/6_sapui5_advanced_concepts/README.md)
+- [SAP Standard Apps erweitern](/7_extending_sap_standard_apps/README.md)
