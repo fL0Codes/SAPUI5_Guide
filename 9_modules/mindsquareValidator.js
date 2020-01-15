@@ -7,7 +7,7 @@ sap.ui.define([
 ], function (Object, Message, MessageType, ValueState, Log) {
 	"use strict";
 
-	return Object.extend("de.hcm.axelspringer.PS.utils.Validator", {
+	return Object.extend("de.mindsquare.utils.Validator", {
 
 		/**
 		 * Constructor for validator object 
