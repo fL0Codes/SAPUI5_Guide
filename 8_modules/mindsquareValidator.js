@@ -47,7 +47,7 @@ sap.ui.define([
 		_aValidateProperties: ["value", "selectedKey", "text"],
 
 		/**
-		 * Main function to validate view data 
+		 * Main function to validate control data 
 		 * 
 		 * @param {(sap.ui.core.Control|sap.ui.layout.form.FormContainer|sap.ui.layout.form.FormElement)} oControl - Control to be validated
 		 */
