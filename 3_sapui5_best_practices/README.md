@@ -2,70 +2,22 @@
   <img src="../img/ms_logo.png" alt="mindsquare Logo"/>
 </p>
 
-# SAPUI5 - Best Practices
+# SAPUI5 - Coding Guidelines & Best Practices
 
-Dies ist eine Sammlung von Best Practices in der SAPUI5 Programmierung. Angefangen vom initialen Projektsetup bis hin zu fortgeschrittenen Konzepten findet sich hier alles. Dieser Guide wird im Laufe der Zeit beständig erweitert - also dran bleiben!
+This is a collection of coding guidelines and best practices I find useful and therefore often use them throughout my projects. I gathered them from different sources and always adjust them/add new items when I encounter somethind new and interesting.
 
-## Inhaltsverzeichnis
+# Table of Contents
 
-- [SAPUI5 Best Practices](#sapui5-best-practices)
-  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
-    - [1. Projektsetup](#1-projektsetup)
-      - [1.1 Ordnerstruktur](#11-ordnerstruktur)
-        - [1.1.1 root Ordner](#111-root-ordner)
-        - [1.1.2 webapp Ordner](#112-webapp-ordner)
-        - [1.1.3 test Ordner](#113-test-ordner)
-        - [1.1.4 Weitere Ordner](#114-weitere-ordner)
-          - [view Ordner](#view-ordner)
-          - [controller Ordner](#controller-ordner)
-          - [model Ordner](#model-ordner)
-          - [i18n Ordner (Localization)](#i18n-ordner-localization)
-          - [localService Ordner](#localservice-ordner)
-      - [1.2 Templates nutzen](#12-templates-nutzen)
-      - [1.3 Projektname & Namespaces](#13-projektname--namespaces)
-    - [2. Coding Guidelines](#2-coding-guidelines)
-      - [2.1 Allgemeine Guidelines](#21-allgemeine-guidelines)
-      - [2.2 Variablen](#22-variablen)
-    - [3. Entwicklungskonventionen einer UI5-App](#3-entwicklungskonventionen-einer-ui5-app)
-      - [3.1 Bootstrapping](#31-bootstrapping)
-      - [3.2 Verwendung einer Component.js](#32-verwendung-einer-componentjs)
-      - [3.3 manifest.json pflegen](#33-manifestjson-pflegen)
-      - [3.4 MVC - Pattern](#34-mvc---pattern)
-      - [3.5 MVC Namenskonventionen](#35-mvc-namenskonventionen)
-      - [3.6 Data Binding](#36-data-binding)
-        - [3.6.1 Binding-Modes](#361-binding-modes)
-        - [3.6.2 Binding Arten](#362-binding-arten)
-      - [3.7 Formatierung & Custom Formatter](#37-formatierung--custom-formatter)
-      - [3.8 Weiteres zu Models](#38-weiteres-zu-models)
-        - [3.8.1 Modeltypen und Verwendung](#381-modeltypen-und-verwendung)
-        - [3.8.2 Lesen/Ändern von Modeldaten](#382-lesen%c3%84ndern-von-modeldaten)
-        - [3.8.3 createKey() benutzen](#383-createkey-benutzen)
-      - [3.9 Internationalisierung](#39-internationalisierung)
-      - [3.10 Routing](#310-routing)
-        - [3.10.1 Allgemeine Konventionen](#3101-allgemeine-konventionen)
-        - [3.10.2 Abfangen ungültiger Hashes](#3102-abfangen-ung%c3%bcltiger-hashes)
-        - [3.10.3 Nutzung von Parametern beim Routing](#3103-nutzung-von-parametern-beim-routing)
-        - [3.11 Error Handling](#311-error-handling)
-      - [3.12 Validierung](#312-validierung)
-      - [3.13 ESLINT Hinweise beachten](#313-eslint-hinweise-beachten)
-    - [4. Quickwins](#4-quickwins)
-      - [4.1 SAPUI5 Shortcuts](#41-sapui5-shortcuts)
-      - [4.2 Mock-Daten ohne Backend nutzen](#42-mock-daten-ohne-backend-nutzen)
-    - [5. Fortgeschrittene Konzepte](#5-fortgeschrittene-konzepte)
-      - [5.1 Modularisierung](#51-modularisierung)
-        - [5.1.1 View-Fragments](#511-view-fragments)
-        - [5.1.2 Formatter](#512-formatter)
-        - [5.1.3 Utilities](#513-utilities)
-      - [5.2 Nutzung von Models (z.B. Device Model)](#52-nutzung-von-models-zb-device-model)
-      - [5.3 Performanceverbesserung](#53-performanceverbesserung)
-        - [5.3.1 Lazy Loading beim Routing](#531-lazy-loading-beim-routing)
-        - [5.3.2 Component-preload.js](#532-component-preloadjs)
-      - [5.4 Testmanagement](#54-testmanagement)
-      - [5.5 Sichere UI5-Apps](#55-sichere-ui5-apps)
-      - [5.6 Erweiterungsmanagement](#56-erweiterungsmanagement)
-      - [5.7 Eigene Controls Entwickeln](#57-eigene-controls-entwickeln)
-      - [5.8 Theming von UI5-Apps](#58-theming-von-ui5-apps)
-      - [5.9 Mit Git arbeiten](#59-mit-git-arbeiten)
+- [SAPUI5 Best Practices](#sapui5-best-practices) - [1.3 Projektname & Namespaces](#13-projektname--namespaces)
+  - [2. Coding Guidelines](#2-coding-guidelines)
+    - [2.1 Allgemeine Guidelines](#21-allgemeine-guidelines)
+    - [2.2 Variablen](#22-variablen)
+  - [3. Entwicklungskonventionen einer UI5-App](#3-entwicklungskonventionen-einer-ui5-app)
+    - [3.1 Bootstrapping](#31-bootstrapping)
+    - [3.2 Verwendung einer Component.js](#32-verwendung-einer-componentjs)
+    - [3.3 manifest.json pflegen](#33-manifestjson-pflegen)
+    - [3.4 MVC - Pattern](#34-mvc---pattern)
+    - [3.5 MVC Namenskonventionen](#35-mvc-namenskonventionen)
 
 ### 1. Projektsetup
 
